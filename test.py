@@ -15,3 +15,6 @@ with github_repo( 'CalibrationTest', 'calibration', ):
 with httpimport.github_repo('operatorequals', 'covertutils', branch = 'master'):
     import covertutils
 # Also works with 'bitbucket_repo' and 'gitlab_repo'
+
+
+from calibration import *
