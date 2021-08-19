@@ -8,5 +8,10 @@ lib.FixTemperature_MAPS()
 
 from httpimport import github_repo
 
-with github_repo( 'CalibrationTest', 'lib', ):
+with github_repo( 'CalibrationTest', 'calibration', ):
     import lib
+
+
+with httpimport.github_repo('operatorequals', 'covertutils', branch = 'master'):
+    import covertutils
+# Also works with 'bitbucket_repo' and 'gitlab_repo'
